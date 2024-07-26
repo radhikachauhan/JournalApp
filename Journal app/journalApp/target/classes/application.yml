@@ -1,0 +1,35 @@
+#
+#spring:
+#  data:
+#    mongodb:
+#      uri=mongodb+srv://radhikachauhan492:BOr83o4iOFrCcwBW@cluster0.rg2hwkr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+#      database=journaldb
+#
+#
+#
+#  application:
+#    name=JournalApp:
+#
+#      spring:
+#        main:
+#          allow-circular-references=true:
+
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://radhikachauhan492:BOr83o4iOFrCcwBW@cluster0.rg2hwkr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: journaldb
+
+  application:
+    name: JournalApp
+
+  main:
+    allow-circular-references: true
+
+server:
+  port: 8081
+
+weather:
+  api:
+    key: https://api.tomorrow.io/v4/weather/forecast?location=42.3478,-71.0466&apikey=ABqKRGkC9vloRv44jWI1lNTrTStcEaHg
